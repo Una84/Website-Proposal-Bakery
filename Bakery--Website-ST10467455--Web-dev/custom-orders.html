@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Orders – Sweet Crust Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Sweet Crust</a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="custom-orders.html" class="active">Custom Orders</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Custom Orders</h1>
+    <p>Request a special cake or pastry for your celebration:</p>
+    <form id="orderForm">
+      <label>Name:<br><input type="text" name="name" required></label><br>
+      <label>Email:<br><input type="email" name="email" required></label><br>
+      <label>Event Date:<br><input type="date" name="date" required></label><br>
+      <label>Order Details:<br><textarea name="details" required></textarea></label><br>
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+    <p id="orderMsg"></p>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Sweet Crust Bakery</p>
+  </footer>
+</body>
+</html>
