@@ -1,4 +1,4 @@
-# 🎂 Bakery Website ( Includes Screenshots in different devices or screen sizes ) 
+# 🎂 Bakery Website ( Includes Screenshots in different devices or screen sizes )
 
 ---
 
