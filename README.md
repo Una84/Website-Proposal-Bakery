@@ -94,13 +94,13 @@ The wireframe outlines the basic layout for each page before design implementati
 *(Stored inside `/screenshots` folder in the repo)*  
 
 ### Desktop View  
-![Desktop view](screenshots/2025-09-26 (4).png)  
+![Desktop view](screenshots/desktop.png)  
 
 ### Tablet View  
-![Tablet view](screenshots/2025-09-26 (1).png)  
+![Tablet view](screenshots/tablet.png)  
 
 ### Mobile View  
-![Mobile view](screenshots/2025-09-26 (3).png)  
+![Mobile view](screenshots/mobile.png)  
 
 ---
 
