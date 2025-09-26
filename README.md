@@ -94,13 +94,13 @@ The wireframe outlines the basic layout for each page before design implementati
 *(Stored inside `/screenshots` folder in the repo)*  
 
 ### Desktop View  
-![Desktop view](screenshots/https://1drv.ms/i/c/51046330c4faabf3/ESS3BFLAjo5InNxGap2x-bgBHZeI5gR9cS7O-nNa2-Ib8g?e=Mb4AKF)  
+![Desktop view](https://1drv.ms/i/c/51046330c4faabf3/ESS3BFLAjo5InNxGap2x-bgBHZeI5gR9cS7O-nNa2-Ib8g?e=Mb4AKF)  
 
 ### Tablet View  
-![Tablet view](screenshots/https://1drv.ms/i/c/51046330c4faabf3/EW9Xr_1k-gZMhaQF7lLbFbUBtNOMUE2iPK2UfOuss40-FA?e=NjMyG3)  
+![Tablet view](https://1drv.ms/i/c/51046330c4faabf3/EW9Xr_1k-gZMhaQF7lLbFbUBtNOMUE2iPK2UfOuss40-FA?e=NjMyG3)  
 
 ### Mobile View  
-![Mobile view](screenshots/https://1drv.ms/i/c/51046330c4faabf3/EWigOvzwWVhMmkLsSH94ZIMBQGB6olsvbm-VGQRjuBpAwQ?e=dg4Rw9)  
+![Mobile view](https://1drv.ms/i/c/51046330c4faabf3/EWigOvzwWVhMmkLsSH94ZIMBQGB6olsvbm-VGQRjuBpAwQ?e=dg4Rw9)  
 
 ---
 
