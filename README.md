@@ -90,7 +90,7 @@ The wireframe outlines the basic layout for each page before design implementati
 
 ---
 
-## 📸 Screenshots ( links to screenshot vies ) 
+## 📸 Screenshots ( links to screenshot views ) 
 *(Stored inside `/screenshots` folder in the repo)*  
 
 ### Desktop View  
