@@ -94,16 +94,13 @@ The wireframe outlines the basic layout for each page before design implementati
 *(Stored inside `/screenshots` folder in the repo)*  
 
 ### Desktop View  
-![Desktop view](https://1drv.ms/i/c/51046330c4faabf3/ESS3BFLAjo5InNxGap2x-bgBHZeI5gR9cS7O-nNa2-Ib8g?e=wYkmct)
-**Alternative link:** [View Desktop Screenshot on OneDrive](https://1drv.ms/i/c/51046330c4faabf3/ESS3BFLAjo5InNxGap2x-bgBHZeI5gR9cS7O-nNa2-Ib8g?e=wYkmct)
-
+** link:** [View Desktop Screenshot on OneDrive](https://1drv.ms/i/c/51046330c4faabf3/ESS3BFLAjo5InNxGap2x-bgBHZeI5gR9cS7O-nNa2-Ib8g?e=wYkmct)
 
 ### Tablet View  
-![Tablet view](https://1drv.ms/i/c/51046330c4faabf3/EW9Xr_1k-gZMhaQF7lLbFbUBtNOMUE2iPK2UfOuss40-FA?e=CHmf8S)  
+** link:** [View Desktop Screenshot on OneDrive](https://1drv.ms/i/c/51046330c4faabf3/EW9Xr_1k-gZMhaQF7lLbFbUBtNOMUE2iPK2UfOuss40-FA?e=CHmf8S)
 
 ### Mobile View  
-![Mobile view](https://1drv.ms/i/c/51046330c4faabf3/EWigOvzwWVhMmkLsSH94ZIMBQGB6olsvbm-VGQRjuBpAwQ?e=7O2mll)  
-
+** link:** [View Desktop Screenshot on OneDrive](https://1drv.ms/i/c/51046330c4faabf3/EWigOvzwWVhMmkLsSH94ZIMBQGB6olsvbm-VGQRjuBpAwQ?e=7O2mll)
 ---
 
 ## 📚 References
