@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "sourdough-loaf",
+    "name": "Sourdough Loaf",
+    "description": "Slow fermented sourdough, crisp crust and tangy crumb.",
+    "category": "Bread",
+    "price": "65.00",
+    "image_small": "images/bread-small.jpg",
+    "image": "images/bread.jpg",
+    "image_large": "images/bread.jpg"
+  },
+  {
+    "slug": "butter-croissant",
+    "name": "Butter Croissant",
+    "description": "Flaky, buttery croissant made with fermented butter.",
+    "category": "Pastry",
+    "price": "28.00",
+    "image_small": "images/pastry-small.jpg",
+    "image": "images/pastry.jpg",
+    "image_large": "images/pastry.jpg"
+  },
+  {
+    "slug": "vanilla-celebration-cake",
+    "name": "Vanilla Celebration Cake",
+    "description": "Custom vanilla layered cake with buttercream finish.",
+    "category": "Cake",
+    "price": "650.00",
+    "image_small": "images/cake-small.jpg",
+    "image": "images/cake.jpg",
+    "image_large": "images/cake.jpg"
+  }
+]
