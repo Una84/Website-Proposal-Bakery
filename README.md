@@ -1,8 +1,9 @@
-# 🎂 Bakery Website ( Includes Screenshots in different devices or screen sizes )
+# 🎂 Bakery Website ( **Includes Screenshots in different devices or screen sizes** ) and also PArt 3 ( **Changelog** )---lastly for part 3 again it inludes ( **🔐 SEO, Security & Performance Summary** )  
 
 ---
 
 ## 👤 Student Information
+
 - **Name:** Phungo Unarine  
 - **Student Number:** ST10467455  
 - **Subject & Code:** Website Development – WEBE5020  
@@ -24,11 +25,13 @@ The website is designed to:
 
 ## 🎯 Website Goals & KPIs
 ### Goals:
+
 - Drive custom orders for breads, cakes, and pastries  
 - Increase brand visibility beyond the local neighbourhood  
 - Enable enquiries for birthdays, weddings, catering, and special events  
 
 ### KPIs:
+
 - Total website visitors  
 - Number of enquiry submissions  
 - Number of custom-order requests  
