@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sweet Crust Bakery</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <title>Sweet Crust — Artisan Bakery in Cape Town</title>
+  <meta name="description" content="Sweet Crust — artisan breads, pastries and custom cakes in Cape Town. Order online or enquire for custom events." />
+  <link rel="canonical" href="https://yourdomain.example/index.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Leaflet CSS only needed on pages with map (contact.html) but safe to include globally -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Sweet Crust</a>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="custom-orders.html">Custom Orders</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Sweet Crust</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="custom-orders.html">Custom Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Freshly Baked Happiness</h1>
+  <main id="main" class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Freshly baked happiness — every day</h1>
     <p>Artisan breads, pastries, and cakes made with love in Cape Town.</p>
     <a href="products.html" class="btn">Order Now</a>
   </section>
@@ -43,9 +52,40 @@
       </div>
     </div>
   </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Sweet Crust</h3>
+          <p>45 Main Street, Cape Town<br/>Mon–Sat: 7am–6pm</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="custom-orders.html">Custom Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <p><a href="#">Instagram</a> • <a href="#">Facebook</a></p>
+        </div>
+      </div>
 
-  <footer>
-    <p>© <span id="year"></span> Sweet Crust Bakery</p>
+      <div class="footer-bottom">
+        <small>&copy; <span id="year"></span> Sweet Crust — All rights reserved.</small>
+      </div>
+    </div>
   </footer>
+
+  <div id="lightbox" class="lightbox" hidden></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/forms.js" defer></script>
 </body>
 </html>
+
