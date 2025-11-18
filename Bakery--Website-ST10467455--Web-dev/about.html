@@ -3,31 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us – Sweet Crust Bakery</title>
-  <link rel="stylesheet" href="style.css">
+   <title>About — Sweet Crust</title>
+  <meta name="description" content="About Sweet Crust — family-owned artisan bakery in Cape Town. Learn about our story and values." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Sweet Crust</a>
-      <ul>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="custom-orders.html">Custom Orders</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<body data-page="about">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Sweet Crust</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="custom-orders.html">Custom Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Our Story</h1>
-    <p>Founded in 2020, Sweet Crust is a family-owned bakery in Cape Town known for our artisan breads, flaky pastries, and beautiful custom cakes.</p>
-    <p><strong>Mission:</strong> To deliver freshly baked, high-quality goods that bring joy to the community.</p>
-    <p><strong>Vision:</strong> To be Cape Town’s leading artisanal bakery, recognized for quality, innovation, and connection.</p>
+  <main class="container content">
+    <article>
+      <h1>Our Story</h1>
+      <p>Sweet Crust began in 2020 as a small family bakery in Cape Town. Our mission is to bring people together through delicious, handmade baked goods made from locally sourced ingredients.</p>
+
+      <h2>Mission & Vision</h2>
+      <p><strong>Mission:</strong> Deliver freshly baked, high-quality goods that bring joy to the community.</p>
+      <p><strong>Vision:</strong> Be Cape Town’s leading artisan bakery, known for quality, innovation and community.</p>
+
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="card"><img src="https://t3.ftcdn.net/jpg/01/96/46/58/360_F_196465845_KCAF1iAAlLmQo5wt8ZR6uczIyQkZBoDM.jpg" alt="Head baker" loading="lazy"><h3>Jane Doe</h3><p>Head Baker</p></div>
+        <div class="card"><img src="https://media.istockphoto.com/id/1354214297/photo/group-of-students-in-a-cooking-class-learning-about-baking.jpg?s=612x612&w=0&k=20&c=5jtzHC-boQgDsBn6nQRBzGURrNGwW_onVraBtb4uflE=" alt="Team" loading="lazy"><h3>The Team</h3><p>Customer service & production</p></div>
+      </div>
+    </article>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Sweet Crust Bakery</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom"><small>&copy; <span id="year"></span> Sweet Crust</small></div>
+    </div>
   </footer>
+
+  <div id="lightbox" class="lightbox" hidden></div>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
