@@ -1,4 +1,4 @@
-# 🎂 Bakery Website ( **Includes Screenshots in different devices or screen sizes** ) and also PArt 3 ( **Changelog** )---lastly for part 3 again it inludes ( **🔐 SEO, Security & Performance Summary** )  
+# 🎂 Bakery Website ( Includes Screenshots in different devices or screen sizes ) and also Part 3 ( Changelog )---lastly for part 3 again it includes ( 🔐 SEO, Security & Performance Summary )  
 
 ---
 
