@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products – Sweet Crust Bakery</title>
+    <meta name="description" content="Browse Sweet Crust's artisan breads, pastries and cakes. Filter and search products." />
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Sweet Crust</a>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html" class="active">Products</a></li>
-        <li><a href="custom-orders.html">Custom Orders</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<body data-page="products">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Sweet Crust</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
+          <li><a href="custom-orders.html">Custom Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -80,12 +85,15 @@
     </div>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Sweet Crust Bakery</p>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom"><small>&copy; <span id="year"></span> Sweet Crust</small></div>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div id="lightbox" class="lightbox" hidden></div>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
