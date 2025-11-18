@@ -1,0 +1,88 @@
+/* Reset + Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: "Aptos", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fffaf7;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Layout container */
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+/* Header */
+.site-header { background:#f8e1dd; border-bottom: 1px solid rgba(0,0,0,0.04); position: sticky; top:0; z-index: 50; }
+.nav { display:flex; align-items:center; gap:1rem; justify-content:space-between; padding:.6rem 0; }
+.logo { font-weight:700; color:#c94f4f; text-decoration:none; font-size:1.25rem; }
+.nav-toggle { display:none; background:transparent; border:1px solid rgba(0,0,0,0.08); padding:.4rem .6rem; border-radius:8px; }
+
+/* Navigation */
+.main-nav ul { list-style:none; display:flex; gap:1rem; align-items:center; margin:0; }
+.main-nav a { text-decoration:none; color: #333; padding:.45rem .65rem; border-radius:10px; }
+.main-nav a[aria-current="page"], .main-nav a:hover { background:#fdebe8; color:#c94f4f; }
+
+/* Hero */
+.hero { display:grid; grid-template-columns:1fr 420px; gap:1.5rem; align-items:center; padding:2rem 0; }
+.hero-inner h1 { color:#c94f4f; font-size:2rem; margin-bottom:.5rem; }
+.lead { color:#5c4b47; margin-bottom:1rem; }
+.hero-photo img { width:100%; border-radius:10px; display:block; }
+
+/* Buttons */
+.btn { display:inline-block; background:#c94f4f; color:white; padding:.6rem 1rem; border-radius:999px; text-decoration:none; transition:transform .12s, background .12s; }
+.btn:hover { transform:translateY(-2px); background:#a63a3a; }
+.btn-outline { background:transparent; color:#c94f4f; border:1px solid #c94f4f; }
+
+/* Grid */
+.grid { display:grid; gap:1rem; }
+.product-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+/* Cards */
+.card { background:white; padding:1rem; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); overflow:hidden; }
+.card img { width:100%; height:160px; object-fit:cover; border-radius:8px; display:block; }
+.card h3 { margin-top:.6rem; }
+
+/* Category accent */
+.card.bread { border-top:6px solid #d6b26d; }
+.card.pastry { border-top:6px solid #f2a07b; }
+.card.cake { border-top:6px solid #f28fb0; }
+
+/* Controls */
+.controls { display:flex; gap:1rem; margin:1rem 0; align-items:center; }
+.controls input, .controls select { padding:.5rem .6rem; border-radius:8px; border:1px solid #ddd; }
+
+/* Content */
+.content { padding:1.5rem 0; max-width:900px; margin:auto; }
+
+/* Forms */
+.form { display:block; margin-top:1rem; }
+.form label { display:block; margin-bottom:.6rem; font-size:.95rem; }
+.form input, .form textarea, .form select { width:100%; padding:.6rem; border-radius:8px; border:1px solid #ddd; margin-top:.25rem; }
+.grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap:1rem; }
+.form-actions { display:flex; gap:1rem; align-items:center; margin-top:.6rem; }
+.form-message { margin-left:.5rem; color:#0b6b2a; }
+
+/* Contact & Map */
+.contact-grid { display:grid; grid-template-columns: 1fr 1fr; gap:1.2rem; align-items:start; }
+
+/* Footer */
+.site-footer { background:#f8e1dd; margin-top:2rem; padding:1rem 0; }
+.footer-grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:1rem; }
+.footer-bottom { margin-top:1rem; text-align:center; }
+
+/* Lightbox (simple) */
+.lightbox { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.8); z-index:9999; }
+.lightbox img { max-width:95%; max-height:85%; border-radius:8px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero { grid-template-columns:1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .main-nav ul { display:none; }
+  .nav-toggle { display:inline-block; }
+  .main-nav.open ul { display:flex; flex-direction:column; gap:.5rem; background:#fdebe8; padding:.6rem; border-radius:8px; margin-top:.5rem; }
+}
