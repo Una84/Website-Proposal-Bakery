@@ -4,37 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Orders – Sweet Crust Bakery</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <script defer src="script.js"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Sweet Crust</a>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="custom-orders.html" class="active">Custom Orders</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<body data-page="custom-orders">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Sweet Crust</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="custom-orders.html" aria-current="page">Custom Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Custom Orders</h1>
-    <p>Request a special cake or pastry for your celebration:</p>
-    <form id="orderForm">
-      <label>Name:<br><input type="text" name="name" required></label><br>
-      <label>Email:<br><input type="email" name="email" required></label><br>
-      <label>Event Date:<br><input type="date" name="date" required></label><br>
-      <label>Order Details:<br><textarea name="details" required></textarea></label><br>
-      <button type="submit" class="btn">Submit Request</button>
+  <main class="container content">
+    <h1>Custom Orders & Enquiries</h1>
+    <p>Use this form to enquire about cakes, event catering or volunteer/sponsorship opportunities.</p>
+
+    <form id="enquiryForm" class="form" novalidate>
+      <div class="grid-2">
+        <label>Full name <input name="name" type="text" required minlength="2"></label>
+        <label>Email <input name="email" type="email" required></label>
+      </div>
+
+      <div class="grid-2">
+        <label>Phone <input name="phone" type="tel" pattern="^[0-9+()\\-\\s]{7,20}$"></label>
+        <label>Type
+          <select name="type" required>
+            <option value="order">Custom Order</option>
+            <option value="event">Event Catering</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="sponsor">Sponsorship</option>
+          </select>
+        </label>
+      </div>
+
+      <label>Preferred Date <input name="date" type="date"></label>
+      <label>Details <textarea name="details" rows="5" required placeholder="Describe your request, guest numbers, style, budget..."></textarea></label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Submit Enquiry</button>
+        <div id="enqMsg" class="form-message" role="status" aria-live="polite"></div>
+      </div>
     </form>
-    <p id="orderMsg"></p>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Sweet Crust Bakery</p>
+  <footer class="site-footer">
+    <div class="container"><div class="footer-bottom"><small>&copy; <span id="year"></span> Sweet Crust</small></div></div>
   </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/forms.js" defer></script>
 </body>
 </html>
