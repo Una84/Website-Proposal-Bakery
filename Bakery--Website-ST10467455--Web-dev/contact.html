@@ -4,33 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – Sweet Crust Bakery</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Contact Sweet Crust bakery. Visit our store, call, or use the contact form." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Sweet Crust</a>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="custom-orders.html">Custom Orders</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Sweet Crust</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="custom-orders.html">Custom Orders</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container content">
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Visit us or get in touch:</p>
-    <p><strong>Address:</strong> 45 Main Street, Cape Town</p>
-    <p><strong>Phone:</strong> +27 21 123 4567</p>
-    <p><strong>Hours:</strong> Mon–Sat, 7am – 6pm</p>
+    <div class="contact-grid">
+      <div>
+        <h2>Visit or Call</h2>
+        <p><strong>Address</strong><br>45 Main Street, Cape Town</p>
+        <p><strong>Phone</strong><br><a href="tel:+27211234567">+27 21 123 4567</a></p>
+        <p><strong>Hours</strong><br>Mon–Sat 7am–6pm</p>
+      </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+      <div>
+        <h2>Send a Message</h2>
+        <form id="contactForm" class="form" novalidate>
+          <label>Name <input name="name" required></label>
+          <label>Email <input name="email" type="email" required></label>
+          <label>Reason
+            <select name="reason">
+              <option>General</option>
+              <option>Order enquiry</option>
+              <option>Feedback</option>
+            </select>
+          </label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+            <div id="contactMsg" class="form-message" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <h2>Find Us</h2>
+    <div id="map" style="height:320px; border-radius:8px; overflow:hidden;"></div>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Sweet Crust Bakery</p>
+  <footer class="site-footer">
+    <div class="container"><div class="footer-bottom"><small>&copy; <span id="year"></span> Sweet Crust</small></div></div>
   </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/forms.js" defer></script>
+  <script>
+    // Initialize Leaflet map (centered on Cape Town)
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        const map = L.map('map').setView([-33.9258, 18.4233], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([-33.9258, 18.4233]).addTo(map).bindPopup('<strong>Sweet Crust</strong><br>45 Main Street').openPopup();
+      } catch (e) {
+        console.warn('Map could not be initialized', e);
+      }
+    });
+  </script>
 </body>
 </html>
+
