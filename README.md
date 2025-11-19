@@ -65,6 +65,25 @@ The website is designed to:
 
 ---
 
+## 📁 Sitemap.xml & Robots.txt  
+
+### **sitemap.xml**
+A `sitemap.xml` file is included to help search engines crawl and understand the website structure.  
+It contains all major URLs and update frequencies.
+
+✔ Located in: `root folder`  
+✔ Improves SEO and indexing  
+✔ Required for Part 3 assessment  
+
+### **robots.txt**
+A `robots.txt` file is added to instruct search engine crawlers which pages may be indexed.
+
+✔ Located in: `root folder`  
+✔ Allows sitemap access  
+✔ Helps control crawler behaviour  
+
+---
+
 ## 📝 Wireframe Summary 
 
 - **Home:** Hero banner, featured items, order CTA  
