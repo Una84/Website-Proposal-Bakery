@@ -169,13 +169,18 @@ A `robots.txt` file is added to instruct search engine crawlers which pages may 
 - Lazy-loading for product/gallery images  
 
 ---
-## 📚 References
-- Sweet Crust Instagram (2025). Retrieved from [Instagram link]  
-- Shopify. (2024). *Small business e-commerce trends*. Shopify Inc.  
-- Nielsen Norman Group. (2024). *E-commerce UX guidelines*. Retrieved from [https://nngroup.com](https://nngroup.com)  
-- MDN Web Docs. (2025). *HTML, CSS, JavaScript guides*. Retrieved from [https://developer.mozilla.org/](https://developer.mozilla.org/)  
-- W3Schools CSS Reference. (2025). Retrieved from [https://www.w3schools.com/cssref/](https://www.w3schools.com/cssref/)  
-- CSS Tricks. (2024). *Complete Guide to CSS Grid & Flexbox*. Retrieved from [https://css-tricks.com](https://css-tricks.com)  
+## 📚 References ( Updated )
+
+- **Sweet Crust Bakery Instagram.** (2025). *Product photography and brand inspiration.* Retrieved from Instagram app.  
+- **Shopify.** (2024). *Small Business E-commerce Trends Report.* Shopify Inc.  
+- **Nielsen Norman Group.** (2024). *E-commerce User Experience Guidelines.* Retrieved from https://nngroup.com  
+- **MDN Web Docs.** (2025). *HTML, CSS & JavaScript Documentation.* Mozilla Foundation.  
+- **W3Schools.** (2025). *CSS & Web Development Reference.* Retrieved from https://w3schools.com  
+- **CSS-Tricks.** (2024). *Guide to Flexbox & CSS Grid.* Retrieved from https://css-tricks.com  
+- **Google Developers.** (2025). *SEO Starter Guide.* Retrieved from https://developers.google.com/search  
+- **LeafletJS.** (2025). *Interactive Maps Documentation.* Retrieved from https://leafletjs.com  
+- **Canva Design School.** (2024). *Branding Inspiration for Small Businesses.* Retrieved from https://canva.com  
+- **Bootstrap Docs.** (2024). *Responsive Layout Principles.* Retrieved from https://getbootstrap.com  
 
 ---
 
