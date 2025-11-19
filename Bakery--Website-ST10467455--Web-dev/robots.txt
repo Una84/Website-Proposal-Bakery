@@ -1,0 +1,12 @@
+# robots.txt for Sweet Crust Bakery Website
+
+User-agent: *
+Allow: /
+
+# Block sensitive or unnecessary folders (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: http://localhost/sitemap.xml
